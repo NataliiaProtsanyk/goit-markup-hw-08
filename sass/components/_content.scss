@@ -1,0 +1,28 @@
+.content-list {
+    display: flex;
+    align-items: center;
+}
+.content-list__item{
+    width: 270px;
+}
+.content-list__item {
+    
+    &:not(:last-child) {
+       margin-right: 30px;
+    }
+}
+.content-text {
+    color: $main-content-color;
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+}
+.content-title {
+    color: $titel-text-color;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

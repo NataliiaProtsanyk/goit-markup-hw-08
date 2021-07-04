@@ -1,0 +1,45 @@
+.footer {
+    padding: 60px 0;
+    color: $primary-whit-color;
+    background: $hero-color;
+    min-width: 1200px;
+}
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+    color: $primary-whit-color;
+}
+.address-logo-wrapper {
+    width: 231px;
+    margin-right: 70px;
+}
+.logo__accent {
+    color: $accent-color;
+}
+.address {
+    font-style: normal;
+}
+.address__link {
+    text-decoration: none;
+    color: $footer-link-color;
+    display: block;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    transition: color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        color: $accent-color;
+        font-weight: normal;
+    }
+}
+.address__item {  
+    
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}

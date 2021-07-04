@@ -1,0 +1,23 @@
+.close-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: $primary-whit-color;
+     
+    &:hover,
+    &:focus {
+    cursor: pointer;
+    fill: $accent-color;
+    }
+}
+.close-black {
+    width: 11px;
+    height: 11px;
+}

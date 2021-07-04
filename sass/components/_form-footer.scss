@@ -1,0 +1,55 @@
+.form-footer {
+    width: 570px;
+    margin-left: auto;
+}
+.footer__appeal {
+    font-weight: bold;
+    line-height: 1.143;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.form-footer .form-client {
+    display: flex;
+}
+.form-footer .email-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px $shadow-box-color);
+    font-size: 16px;
+    line-height: 1.25;
+    margin-right: 12px;
+    border-radius: 4px;
+    background: $hero-color;
+    color: $primary-whit-color;
+}
+.send-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: $primary-whit-color;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    background: $accent-color;
+    font-family: inherit;
+    font-family: Roboto, sans-serif;
+    padding: 10px 32px;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $primary-whit-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: $button-hover-color;
+    cursor: pointer;
+    }
+}

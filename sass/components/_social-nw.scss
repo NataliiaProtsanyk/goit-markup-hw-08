@@ -1,10 +1,28 @@
 .footer-container {
     display: flex;
     align-items: baseline;
+
+    @media screen and (max-width: $desktop - 1) {
+        align-items: center;
+        flex-direction: column;
+      }
+      @media screen and (max-width: $tablet - 1) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media screen and (min-width: $desktop) {
+        align-items: baseline;
+      }
 }
 .social-networks-wrapper {
     margin-right: 93px;
     width: 206px;
+    @media screen and (max-width: $tablet - 1) {
+        margin-bottom: 60px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+      }
 }
 .social-networks-list {
     display: flex;
@@ -36,6 +54,9 @@
       }
 }
 .social-networks__text {
+    @media screen and (max-width: $desktop - 1) {
+        text-align: center;
+    }
     font-weight: bold;
     line-height: 1.143;
     text-transform: uppercase;

@@ -8,6 +8,9 @@
     opacity: 1;
     transition: opacity 250ms 
     cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $tablet) {
+        padding: 208px 159px 207px;
+    }
 }
 .backdrop.is-hidden {
     opacity: 0;

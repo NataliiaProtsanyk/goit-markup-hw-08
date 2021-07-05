@@ -3,14 +3,28 @@
     flex-wrap: wrap;
     margin-bottom: -30px;
     margin-right: -30px;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: -30px;
+      }
 }
 .portfolio-list__item {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-}
-.portfolio-list__item {
     background-color: $primary-whit-color;
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+      }
+      @media screen and (min-width: $tablet) {
+        width: 354px;
+        margin-right: 30px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 370px;
+      }
 }
 .portfolio-title {
     color: $titel-text-color;

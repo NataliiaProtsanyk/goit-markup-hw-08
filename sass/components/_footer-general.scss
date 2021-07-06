@@ -11,8 +11,21 @@
     color: $primary-whit-color;
 }
 .address-logo-wrapper {
-    width: 231px;
-    margin-right: 70px;
+    display: flex;
+    @media screen and (max-width: $desktop - 1) {
+      align-items: center;
+    }
+    flex-direction: column;
+    @media screen and (max-width: $tablet - 1) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-right: 165px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 231px;
+      margin-right: 70px;
+    }
 }
 .logo__accent {
     color: $accent-color;

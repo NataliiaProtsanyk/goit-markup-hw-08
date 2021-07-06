@@ -13,42 +13,36 @@
         padding-top: 200px;
         padding-bottom: 200px;
       }
-    
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/img-adapt/mobile/mobile1xhero.jpg);
+      background-image: linear-gradient($overlay-color,$overlay-color),
+        url("../images/img-adapt/mobile/mobile1xhero.jpg");
       background-size: cover;
-    
       @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../images/img-adapt/mobile/mobile2xhero.jpg);
+        background-image: linear-gradient($overlay-color,$overlay-color),
+          url("../images/img-adapt/mobile/mobile2xhero.jpg");
       }
-    
       @media screen and (min-width: 481px) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../images/img-adapt/tablet/tablet1xhero.jpg);
-    
-        @media screen and (min-device-pixel-ratio: 2),
+        background-image: linear-gradient($overlay-color,$overlay-color),
+          url("../images/img-adapt/tablet/tablet1xhero.jpg");
+      @media screen and (min-device-pixel-ratio: 2),
           screen and (-webkit-min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
           screen and (min-resolution: 2dppx) {
-          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/img-adapt/tablet/tablet2xhero.jpg);
+          background-image: linear-gradient($overlay-color,$overlay-color),
+            url("../images/img-adapt/tablet/tablet2xhero.jpg");
         }
       }
-    
       @media screen and (min-width: 769px) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../images/img-adapt/desctop/desctop1xhero.jpg);
-    
-        @media screen and (min-device-pixel-ratio: 2),
+        background-image: linear-gradient($overlay-color,$overlay-color),
+          url("../images/img-adapt/desctop/desctop1xhero.jpg");
+      @media screen and (min-device-pixel-ratio: 2),
           screen and (-webkit-min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
           screen and (min-resolution: 2dppx) {
-          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/img-adapt/desctop/desctop2xhero.jpg);
+          background-image: linear-gradient($overlay-color,$overlay-color),
+            url("../images/img-adapt/desctop/desctop2xhero.jpg");
         }
       }
 }

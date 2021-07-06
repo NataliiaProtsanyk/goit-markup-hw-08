@@ -1,9 +1,9 @@
 .about {
+    display: none;
     padding-top: 0;
-    
     @media screen and (min-width: $desktop) {
-        display: none;
-      }
+        display: block;
+    }
 }
 .main-title {
     color: $titel-text-color;

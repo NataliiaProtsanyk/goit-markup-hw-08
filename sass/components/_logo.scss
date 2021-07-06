@@ -7,6 +7,16 @@
     letter-spacing: 0.03em;
     font-weight: 700;
     text-decoration: none;
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+        line-height: 1.192;
+    }
+    @media screen and (min-width: $tablet) {
+        margin-right: 88px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+    }
 }
 .logo-title {
     color: $accent-color;

@@ -11,6 +11,9 @@
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
+@media screen and (min-width: $desktop) {
+        line-height: 1.15;
+    }
 }
 .form-lable {
     display: flex;

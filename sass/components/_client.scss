@@ -1,3 +1,23 @@
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.client-lis {
+    display: flex;
+    max-width: 450px;
+    flex-wrap: wrap;
+    margin: -15px;
+    @media screen and (max-width: $desktop) {
+        .client-lis__item {
+            margin: 15px;
+        }
+    }
+}
 .client-title {
     font-family: Roboto;
     font-style: normal;
@@ -7,12 +27,13 @@
     text-align: center;
     margin-bottom: 50px;
     letter-spacing: 0.03em;
+    @media screen and (max-width: $desktop) {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
 }
-.client-lis__item {
-    
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+.client-lis__item:not(:last-child) {
+    margin-left: 30px;
 }
 .client-lis__item {
     width: 170px;
@@ -20,13 +41,17 @@
 }
 .client-list {
     display: flex;
-    justify-content: center;
+    margin-left: -30px;
+    margin-bottom: -30px;
 
     &:hover,
     &:focus {
         fill: $accent-color;
         border-color: $accent-color;
     }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+      }
 }
 .client-lis__link {
     display: inline-flex;

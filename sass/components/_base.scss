@@ -66,3 +66,36 @@ img {
     width: 20px;
     height: 20px;
 }
+.img_mobile {
+    @media screen and (max-width: $mobile) {
+      display: block;
+    }
+    @media screen and (min-width: $mobile + 1) {
+      display: none;
+    }
+    @media screen and (min-width: $tablet + 1) {
+      display: none;
+    }
+  }
+  .img_tablet {
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+    @media screen and (min-width: $mobile + 1) {
+      display: block;
+    }
+    @media screen and (min-width: $tablet + 1) {
+      display: none;
+    }
+  }
+  .img_desktop {
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+    @media screen and (min-width: $mobile + 1) {
+      display: none;
+    }
+    @media screen and (min-width: $tablet + 1) {
+      display: block;
+    }
+  }

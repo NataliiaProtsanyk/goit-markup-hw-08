@@ -16,7 +16,7 @@
         <div class="container header-contact__container">
             <nav class="nav-block">
                 <a href="index.html" class="logo"><span class="logo-title">Web</span>Studio</a>
-                <button class="mobile-menu js-open-menu" type="button" aria-expanded="false" aria-controls="menu-container" data-mobile-menu>
+                <button class="mobile-menu" type="button" aria-expanded="false" aria-controls="menu-container" data-mobile-menu>
                     <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="icon-menu" href="./images/menu-icon.svg#icon-menu"></use>
                         <use class="icon-close" href="./images/menu-icon.svg#icon-close"></use>
@@ -24,9 +24,9 @@
                 </button>
             <div class="menu-container" id="menu-container" data-menu>
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="index.html" class="menu-link menu-link-current">Студия</a></li>
-                    <li class="menu-item"><a href="portfolio.html" class="menu-link">Портфолио</a></li>
-                    <li class="menu-item"><a href="contact.html" class="menu-link">Контакты</a></li>
+                    <li class="menu-list__item"><a href="index.html" class="menu-list__link menu-list__link-current">Студия</a></li>
+                    <li class="menu-list__item"><a href="portfolio.html" class="menu-list__link">Портфолио</a></li>
+                    <li class="menu-list__item"><a href="contact.html" class="menu-list__link">Контакты</a></li>
                 </ul>
                 <ul class="menu-contacts">
                     <li class="menu-contacts__item">
@@ -53,6 +53,7 @@
                 </ul> 
             </div>
             <div>
+            </nav>
                 <ul class="site-nav">
                     <li class="site-nav__item"><a href="index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -76,7 +77,6 @@
                 </li>
             </ul> 
             </div>
-            </nav>
         </div>
     </header> 
 
@@ -160,8 +160,10 @@
        <h2 class="command-title">Наша команда</h2>
        <ul class="command-list">
            <li class="command-list__item"> 
-                <img src="./images/img.jpg" srcset="" alt="Игорь Демьяненко" width="270"/>
-                
+                <!--<img src="./images/img.jpg" srcset="" alt="Игорь Демьяненко" width="270"/>-->
+                <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1xteam.jpg 1x, ./images/img-adapt/mobile/mobile2xteam.jpg 2x" src="./images/img-adapt/mobile/mobile1xteam.jpg" alt="Игорь Демьяненко" width="100%"/>
+                <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1xteam.jpg 1x, ./images/img-adapt/tablet/tablet2xteam.jpg 2x" src="./images/img-adapt/tablet/tablet1xteam.jpg" alt="Игорь Демьяненко" width="100%"/>
+                <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1team.jpg 1x, ./images/img-adapt/desctop/desctop2team.jpg 2x" src="./images/img-adapt/desctop/desctop1team.jpg" alt="Игорь Демьяненко" width="100%"/>
             <div class="command-description">   
                 <h3 class="command-description__name">Игорь Демьяненко </h3>
                 <p class="command-description__type">Designer</p>
@@ -198,7 +200,10 @@
             </div>
            </li>
            <li class="command-list__item"> 
-               <img src="./images/img(1).jpg" alt="Ольга Репина" width="270"/>
+               <!--<img src="./images/img(1).jpg" alt="Ольга Репина" width="270"/>-->
+               <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1x-1team.jpg 1x, ./images/img-adapt/mobile/mobile2x-1team.jpg 2x" src="./images/img-adapt/mobile/mobile1x-1team.jpg" alt="Ольга Репина" width="100%"/>
+                <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1x-1team.jpg 1x, ./images/img-adapt/tablet/tablet2x-1team.jpg 2x" src="./images/img-adapt/tablet/tablet1x-1team.jpg" alt="Ольга Репина" width="100%"/>
+                <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1x-1team.jpg 1x, ./images/img-adapt/desctop/desctop2x-1team.jpg 2x" src="./images/img-adapt/desctop/desctop1x-1team.jpg" alt="Ольга Репина" width="100%"/>
             <div class="command-description">
                 <h3 class="command-description__name">Ольга Репина</h3>
                 <p class="command-description__type">Frontend Developer</p>
@@ -235,7 +240,10 @@
             </div>  
            </li> 
            <li class="command-list__item"> 
-               <img src="./images/img(2).jpg" alt="Николай Тарасов" width="270"/>
+               <!--<img src="./images/img(2).jpg" alt="Николай Тарасов" width="270"/>-->
+               <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1x-2team.jpg 1x, ./images/img-adapt/mobile/mobile2x-2team.jpg 2x" src="./images/img-adapt/mobile/mobile1x-2team.jpg" alt="Николай Тарасов" width="100%"/>
+               <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1x-2team.jpg 1x, ./images/img-adapt/tablet/tablet2x-2team.jpg 2x" src="./images/img-adapt/tablet/tablet1x-2team.jpg" alt="Николай Тарасов" width="100%"/>
+               <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1x-2team.jpg 1x, ./images/img-adapt/desctop/desctop2x-2team.jpg 2x" src="./images/img-adapt/desctop/desctop1x-2team.jpg" alt="Николай Тарасов" width="100%"/>
             <div class="command-description">
                <h3 class="command-description__name">Николай Тарасов</h3>
                <p class="command-description__type">Marketing</p>
@@ -272,7 +280,10 @@
             </div> 
            </li>
            <li class="command-list__item">  
-               <img src="./images/img(3).jpg" alt="Михаил Ермаков" width="270"/>
+               <!--<img src="./images/img(3).jpg" alt="Михаил Ермаков" width="270"/>-->
+               <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1x-3team.jpg 1x, ./images/img-adapt/mobile/mobile2x-3team.jpg 2x" src="./images/img-adapt/mobile/mobile1x-3team.jpg" alt="Михаил Ермаков" width="100%"/>
+               <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1x-3team.jpg 1x, ./images/img-adapt/tablet/tablet2x-3team.jpg 2x" src="./images/img-adapt/tablet/tablet1x-3team.jpg" alt="Михаил Ермаков" width="100%"/>
+               <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1x-3team.jpg 1x, ./images/img-adapt/desctop/desctop2x-3team.jpg 2x" src="./images/img-adapt/desctop/desctop1x-3team.jpg" alt="Михаил Ермаков" width="100%"/>
             <div class="command-description">
                 <h3 class="command-description__name">Михаил Ермаков</h3>
                 <p class="command-description__type">UI Designer</p>

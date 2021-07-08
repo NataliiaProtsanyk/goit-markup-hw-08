@@ -84,18 +84,23 @@
 }
 .contact-list__item:not(:last-child){
     @media screen and (min-width: $desktop) {
-        margin-left: 50px;
+        margin-left: 200px;
       }
 }
 .contact-list__item {
     margin-right: 30px;
-    
     &:focus,
     &:hover {
         color: $accent-color;
     }
+@media screen and(min-width: 1200px) {
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-bottom: 0px;
+      }
 }
 .contact-list__link {
+    display: block;
     color: $main-content-color;
     font-weight: 500;
     font-size: 14px;

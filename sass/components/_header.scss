@@ -23,6 +23,7 @@
 
 .site-nav {
     display: none;
+    padding-right: 40px;
     @media screen and (min-width: $tablet) {
       display: flex;
       align-items: center;

@@ -23,12 +23,11 @@
     max-width: 100%;
     height: auto;
 }
-.command-list__item {
-    
+/*.command-list__item {
     &:not(:last-child){
        margin-right: 30px;
     }
-} 
+} */
 .command-list__item {
     color: $titel-text-color;
     font-size: 16px;

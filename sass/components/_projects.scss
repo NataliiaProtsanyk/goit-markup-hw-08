@@ -26,6 +26,10 @@
     padding: 20px 24px;
     border: 1px solid $card-color;
     flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    width: 354px;
+    height: 148px;
 }
 .project-description {
     font-size: 18px;

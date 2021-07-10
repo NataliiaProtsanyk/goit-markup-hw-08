@@ -1459,7 +1459,6 @@ img {
 .card-contentn {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-  flex-grow: 1;
 }
 
 .portfolio-list__link {
@@ -1502,6 +1501,10 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  width: 354px;
+  height: 148px;
 }
 
 .project-description {

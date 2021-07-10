@@ -6,13 +6,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1600px;
+    height: 400px;
     margin-right: auto;
     margin-left: auto;
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-      }
+    @media screen and(min-width:$desktop) {
+      height: 600px;
+    }
       background-image: linear-gradient($overlay-color,$overlay-color),
         url("../images/img-adapt/mobile/mobile1xhero.jpg");
       background-size: cover;
@@ -78,5 +78,7 @@
     
       @media screen and (min-width: $desktop) {
         max-width: $desktop;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }

@@ -136,17 +136,29 @@
        <h2 class="main-title">Чем мы занимаемся</h2>
    <ul class="main-list">
       <li class="main-list__item">
-          <img class="main-list__img" src="./images/box1.jpg" alt="Работа с програмами" width="370"/>
-          <p class="main-list__type">ДEСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
-      </li> 
+        <picture>
+            <source srcset="./images/img-adapt/About/box-1-w.webp 1x, ./images/img-adapt/About/box-1-2x-w.webp 2x" type="image/webp">
+            <source srcset="./images/img-adapt/About/box-1.jpg 1x, ./images/img-adapt/About/box-1-2x.jpg 2x" type="image/jpeg">
+            <img src="./images/img-adapt/About/box-1.jpg" alt="ДEСКТОПНЫЕ ПРИЛОЖЕНИЯ" width="294" class="image">
+            <p class="main-list__type">ДEСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+        </picture>
+        </li> 
        <li class="main-list__item">
-           <img class="main-list__img" src="./images/box2.jpg" alt="Работа с програмами" width="370"/>
-           <p class="main-list__type">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
-       </li>
+        <picture>
+            <source srcset="./images/img-adapt/About/box-2-w.webp 1x, ./images/img-adapt/About/box-2-2x-w.webp 2x" type="image/webp">
+            <source srcset="./images/img-adapt/About/box-2.jpg 1x, ./images/img-adapt/About/box-2-2x.jpg 2x" type="image/jpeg">
+            <img src="./images/img-adapt/About/box-2.jpg" alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ" width="294" class="image">
+            <p class="main-list__type">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+        </picture>
+        </li>
        <li class="main-list__item">
-           <img class="main-list__img" src="./images/box3.jpg" alt="Работа с програмами" width="370"/>
-           <p class="main-list__type">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
-       </li>
+        <picture>
+            <source srcset="./images/img-adapt/About/box-3-w.webp 1x, ./images/img-adapt/About/box-3-2x-w.webp 2x" type="image/webp">
+            <source srcset="./images/activities/box-3.jpg 1x, ./images/img-adapt/About/box-3-2x.jpg 2x" type="image/jpeg">
+            <img src="./images/img-adapt/About/box-3.jpg" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ" width="294" class="image">
+            <p class="main-list__type">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+        </picture>
+        </li>
    </ul>
    </div>
    </section>
@@ -158,9 +170,19 @@
        <ul class="command-list">
            <li class="command-list__item"> 
                 <!--<img src="./images/img.jpg" srcset="" alt="Игорь Демьяненко" width="270"/>-->
-                <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1xteam.jpg 1x, ./images/img-adapt/mobile/mobile2xteam.jpg 2x" src="./images/img-adapt/mobile/mobile1xteam.jpg" alt="Игорь Демьяненко" width="100%"/>
-                <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1xteam.jpg 1x, ./images/img-adapt/tablet/tablet2xteam.jpg 2x" src="./images/img-adapt/tablet/tablet1xteam.jpg" alt="Игорь Демьяненко" width="100%"/>
-                <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1team.jpg 1x, ./images/img-adapt/desctop/desctop2team.jpg 2x" src="./images/img-adapt/desctop/desctop1team.jpg" alt="Игорь Демьяненко" width="100%"/>
+                <picture>
+                    <source srcset="./images/img-adapt/desctop/team-1-d-w.webp 1x, ./images/img-adapt/desctop/team-1-d-2x-w.webp 2x" type="image/webp" 
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/img-adapt/desctop/team-1-d.jpg 1x, ./images/img-adapt/desctop/team-1-d-2x.jpg 2x" type="image/jpeg" 
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/img-adapt/tablet/team-1-t-w.webp 1x, ./images/img-adapt/tablet/team-1-t-2x-w.webp 2x" type="image/webp" 
+                        media="(min-width: 768px)">
+                    <source srcset="./images/img-adapt/tablet/team-1-t.jpg 1x, ./images/img-adapt/tablet/team-1-t-2x.jpg 2x" type="image/jpeg" 
+                        media="(min-width: 768px)">
+                    <source srcset="./images/img-adapt/mobile/team-1-m-w.webp 1x, ./images/img-adapt/mobile/team-1-m-2x-w.webp 2x" type="image/webp">
+                    <source srcset="./images/img-adapt/mobile/team-1-m.jpg 1x, ./images/img-adapt/mobile/team-1-m-2x.jpg 2x" type="image/jpeg">
+                    <img src="./images/img-adapt/desctop/team-1-m.jpg" alt="Игорь Демьяненко" width="270" class="image">
+                </picture>
             <div class="command-description">   
                 <h3 class="command-description__name">Игорь Демьяненко </h3>
                 <p class="command-description__type">Designer</p>
@@ -197,10 +219,19 @@
             </div>
            </li>
            <li class="command-list__item"> 
-               <!--<img src="./images/img(1).jpg" alt="Ольга Репина" width="270"/>-->
-               <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1x-1team.jpg 1x, ./images/img-adapt/mobile/mobile2x-1team.jpg 2x" src="./images/img-adapt/mobile/mobile1x-1team.jpg" alt="Ольга Репина" width="100%"/>
-                <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1x-1team.jpg 1x, ./images/img-adapt/tablet/tablet2x-1team.jpg 2x" src="./images/img-adapt/tablet/tablet1x-1team.jpg" alt="Ольга Репина" width="100%"/>
-                <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1x-1team.jpg 1x, ./images/img-adapt/desctop/desctop2x-1team.jpg 2x" src="./images/img-adapt/desctop/desctop1x-1team.jpg" alt="Ольга Репина" width="100%"/>
+            <picture>
+                <source srcset="./images/img-adapt/desctop/team-2-d-w.webp 1x, ./images/img-adapt/desctop/team-2-d-2x-w.webp 2x" type="image/webp" 
+                    media="(min-width: 1200px)">
+                <source srcset="./images/img-adapt/desctop/team-2-d.jpg 1x, ./images/img-adapt/desctop/team-2-d-2x.jpg 2x" type="image/jpeg" 
+                    media="(min-width: 1200px)">
+                <source srcset="./images/img-adapt/tablet/team-2-t-w.webp 1x, ./images/img-adapt/tablet/team-2-t-2x-w.webp 2x" type="image/webp" 
+                    media="(min-width: 768px)">
+                <source srcset="./images/img-adapt/tablet/team-2-t.jpg 1x, ./images/img-adapt/tablet/team-2-t-2x.jpg 2x" type="image/jpeg" 
+                    media="(min-width: 768px)">
+                <source srcset="./images/img-adapt/mobile/team-2-m-w.webp 1x, ./images/img-adapt/mobile/team-2-m-2x-w.webp 2x" type="image/webp">
+                <source srcset="./images/img-adapt/desctop/team-2-m.jpg 1x, ./images/img-adapt/mobile/team-2-m-2x.jpg 2x" type="image/jpeg">
+                <img src="./images/img-adapt/desctop/team-2-m.jpg" alt="Ольга Репина" width="270" class="image">
+            </picture>
             <div class="command-description">
                 <h3 class="command-description__name">Ольга Репина</h3>
                 <p class="command-description__type">Frontend Developer</p>
@@ -238,9 +269,19 @@
            </li> 
            <li class="command-list__item"> 
                <!--<img src="./images/img(2).jpg" alt="Николай Тарасов" width="270"/>-->
-               <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1x-2team.jpg 1x, ./images/img-adapt/mobile/mobile2x-2team.jpg 2x" src="./images/img-adapt/mobile/mobile1x-2team.jpg" alt="Николай Тарасов" width="100%"/>
-               <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1x-2team.jpg 1x, ./images/img-adapt/tablet/tablet2x-2team.jpg 2x" src="./images/img-adapt/tablet/tablet1x-2team.jpg" alt="Николай Тарасов" width="100%"/>
-               <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1x-2team.jpg 1x, ./images/img-adapt/desctop/desctop2x-2team.jpg 2x" src="./images/img-adapt/desctop/desctop1x-2team.jpg" alt="Николай Тарасов" width="100%"/>
+               <picture>
+                <source srcset="./images/img-adapt/desctop/team-3-d-w.webp 1x, ./images/img-adapt/desctop/team-3-d-2x-w.webp 2x" type="image/webp" 
+                    media="(min-width: 1200px)">
+                <source srcset="./images/img-adapt/desctop/team-3-d.jpg 1x, ./images/img-adapt/desctop/team-3-d-2x.jpg 2x" type="image/jpeg" 
+                    media="(min-width: 1200px)">
+                <source srcset="./images/img-adapt/tablet/team-3-t-w.webp 1x, ./images/img-adapt/tablet/team-3-t-2x-w.webp 2x" type="image/webp" 
+                    media="(min-width: 768px)">
+                <source srcset="./images/img-adapt/tablet/team-3-t.jpg 1x, ./images/img-adapt/tablet/team-3-t-2x.jpg 2x" type="image/jpeg" 
+                    media="(min-width: 768px)">
+                <source srcset="./images/img-adapt/mobile/team-3-m-w.webp 1x, ./images/img-adapt/mobile/team-3-m-2x-w.webp 2x" type="image/webp">
+                <source srcset="./images/img-adapt/desctop/team-3-m.jpg 1x, ./images/img-adapt/mobile/team-3-m-2x.jpg 2x" type="image/jpeg">
+                <img src="./images/img-adapt/desctop/team-3-m.jpg" alt="Николай Тарасов" width="270" class="image">
+            </picture>
             <div class="command-description">
                <h3 class="command-description__name">Николай Тарасов</h3>
                <p class="command-description__type">Marketing</p>
@@ -278,9 +319,19 @@
            </li>
            <li class="command-list__item">  
                <!--<img src="./images/img(3).jpg" alt="Михаил Ермаков" width="270"/>-->
-               <img class="command-list__img img_mobile" srcset="./images/img-adapt/mobile/mobile1x-3team.jpg 1x, ./images/img-adapt/mobile/mobile2x-3team.jpg 2x" src="./images/img-adapt/mobile/mobile1x-3team.jpg" alt="Михаил Ермаков" width="100%"/>
-               <img class="command-list__img img_tablet" srcset="./images/img-adapt/tablet/tablet1x-3team.jpg 1x, ./images/img-adapt/tablet/tablet2x-3team.jpg 2x" src="./images/img-adapt/tablet/tablet1x-3team.jpg" alt="Михаил Ермаков" width="100%"/>
-               <img class="command-list__img img_desktop" srcset="./images/img-adapt/desctop/desctop1x-3team.jpg 1x, ./images/img-adapt/desctop/desctop2x-3team.jpg 2x" src="./images/img-adapt/desctop/desctop1x-3team.jpg" alt="Михаил Ермаков" width="100%"/>
+               <picture>
+                <source srcset="./images/img-adapt/desctop/team-4-d-w.webp 1x, ./images/img-adapt/desctop/team-4-d-2x-w.webp 2x" type="image/webp" 
+                    media="(min-width: 1200px)">
+                <source srcset="./images/img-adapt/desctop/team-4-d.jpg 1x, ./images/img-adapt/desctop/team-4-d-2x.jpg 2x" type="image/jpeg" 
+                    media="(min-width: 1200px)">
+                <source srcset="./images/img-adapt/tablet/team-4-t-w.webp 1x, ./images/img-adapt/tablet/team-4-t-2x-w.webp 2x" type="image/webp" 
+                    media="(min-width: 768px)">
+                <source srcset="./images/img-adapt/tablet/team-4-t.jpg 1x, ./images/img-adapt/tablet/team-4-t-2x.jpg 2x" type="image/jpeg" 
+                    media="(min-width: 768px)">
+                <source srcset="./images/img-adapt/mobile/team-4-m-w.webp 1x, ./images/img-adapt/mobile/team-4-m-2x-w.webp 2x" type="image/webp">
+                <source srcset="./images/img-adapt/desctop/team-4-m.jpg 1x, ./images/img-adapt/mobile/team-4-m-2x.jpg 2x" type="image/jpeg">
+                <img src="./images/img-adapt/desctop/team-4-m.jpg" alt="Николай Тарасов" width="270" class="image">
+            </picture>
             <div class="command-description">
                 <h3 class="command-description__name">Михаил Ермаков</h3>
                 <p class="command-description__type">UI Designer</p>

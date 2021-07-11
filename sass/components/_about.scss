@@ -24,7 +24,9 @@
     }
 }
 .main-list__item {
+    display: block;
     position: relative;
+    width: 370px;
 }
 .main-list__img {
     display: block;

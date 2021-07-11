@@ -148,6 +148,11 @@ img {
   }
 }
 
+.image {
+  display: block;
+  width: 100%;
+}
+
 .mobile-menu {
   position: absolute;
   display: inline-flex;
@@ -518,51 +523,52 @@ img {
 }
 
 .section-hero {
-  background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   max-width: 1600px;
-  height: 400px;
-  margin-right: auto;
+  background-color: #2F303A;
   margin-left: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/mobile/mobile1xhero.jpg");
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/mobile/hero-m.jpg");
   background-size: cover;
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero {
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/mobile/mobile2xhero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/mobile/hero-m-2x.jpg");
   }
 }
 
 @media screen and (min-width: 481px) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/tablet/tablet1xhero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/table/hero-t.jpg");
   }
 }
 
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/tablet/tablet2xhero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/table/hero-t-2x.jpg");
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/desctop/desctop1xhero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/desctop/hero-d.jpg");
   }
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/desctop/desctop2xhero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/desctop/hero-d-2x.jpg");
   }
 }
 
@@ -590,10 +596,7 @@ img {
 }
 
 .overlay {
-  padding: 118px 15px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -605,14 +608,14 @@ img {
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
     max-width: 1200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    text-align: center;
   }
 }
 
@@ -945,7 +948,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (max-width: 479px) {
@@ -968,7 +971,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -1018,7 +1021,9 @@ img {
 }
 
 .main-list__item {
+  display: block;
   position: relative;
+  width: 370px;
 }
 
 .main-list__img {
@@ -1411,9 +1416,9 @@ img {
   }
 }
 
-.portfolio-list__img {
-  width: 100%;
+.portfolio-list__image {
   height: auto;
+  object-fit: cover;
 }
 
 .portfolio-list__item {
@@ -1459,11 +1464,15 @@ img {
 .card-contentn {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-list__link {
-  display: block;
+  display: flex;
   min-width: 100%;
+  height: 100%;
   flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1501,18 +1510,12 @@ img {
 .card-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-}
-
-@media screen and (max-width: 768px) {
-  .card-content {
-    flex-grow: 1;
-    flex-direction: column;
-    display: flex;
-  }
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-description {
-  font-size: 18px;
   line-height: 1.556;
   letter-spacing: 0.03em;
   color: #FFFFFF;

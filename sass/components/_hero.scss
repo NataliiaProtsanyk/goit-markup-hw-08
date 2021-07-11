@@ -1,50 +1,55 @@
 .section-hero {
-    background-color: $hero-color;
-    background-image: 
-    linear-gradient($overlay-color, $overlay-color), 
-    url(../images/hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1600px;
+  background-color: $hero-color;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-repeat: repeat;
+  background-position: center;
 
-    @media screen and(min-width:$desktop) {
-      height: 600px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/img-adapt/mobile/hero-m.jpg") ;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/img-adapt/mobile/hero-m-2x.jpg");
+  }
+
+  @media screen and (min-width: $mobile + 1) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/img-adapt/table/hero-t.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/img-adapt/table/hero-t-2x.jpg");
     }
-      background-image: linear-gradient($overlay-color,$overlay-color),
-        url("../images/img-adapt/mobile/mobile1xhero.jpg");
-      background-size: cover;
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient($overlay-color,$overlay-color),
-          url("../images/img-adapt/mobile/mobile2xhero.jpg");
-      }
-      @media screen and (min-width: 481px) {
-        background-image: linear-gradient($overlay-color,$overlay-color),
-          url("../images/img-adapt/tablet/tablet1xhero.jpg");
-      @media screen and (min-device-pixel-ratio: 2),
-          screen and (-webkit-min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
-          background-image: linear-gradient($overlay-color,$overlay-color),
-            url("../images/img-adapt/tablet/tablet2xhero.jpg");
-        }
-      }
-      @media screen and (min-width: 769px) {
-        background-image: linear-gradient($overlay-color,$overlay-color),
-          url("../images/img-adapt/desctop/desctop1xhero.jpg");
-      @media screen and (min-device-pixel-ratio: 2),
-          screen and (-webkit-min-device-pixel-ratio: 2),
-          screen and (min-resolution: 192dpi),
-          screen and (min-resolution: 2dppx) {
-          background-image: linear-gradient($overlay-color,$overlay-color),
-            url("../images/img-adapt/desctop/desctop2xhero.jpg");
-        }
-      }
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/img-adapt/desctop/hero-d.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/img-adapt/desctop/hero-d-2x.jpg");
+    }
+  }
 }
 .hero-title {
     text-align: center;
@@ -63,10 +68,7 @@
     }
 }
 .overlay {
-    padding: 118px 15px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+  text-align: center;
 
     @media screen and (min-width: $mobile) {
         max-width: $mobile;
@@ -74,11 +76,11 @@
     
       @media screen and (min-width: $tablet) {
         max-width: $tablet;
+        text-align: center;
     }
     
       @media screen and (min-width: $desktop) {
         max-width: $desktop;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        text-align: center;
     }
 }

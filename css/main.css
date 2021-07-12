@@ -550,7 +550,7 @@ img {
 
 @media screen and (min-width: 481px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/table/hero-t.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-adapt/tablet/hero-t.jpg");
   }
 }
 
@@ -573,7 +573,6 @@ img {
 }
 
 .hero-title {
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -597,26 +596,6 @@ img {
 
 .overlay {
   text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  .overlay {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .overlay {
-    max-width: 768px;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .overlay {
-    max-width: 1200px;
-    text-align: center;
-  }
 }
 
 .button-hero {

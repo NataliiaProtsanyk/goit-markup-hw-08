@@ -1,6 +1,9 @@
 .section-hero {
   max-width: 1600px;
   background-color: $hero-color;
+  background-image: 
+  linear-gradient($overlay-color, $overlay-color), 
+  url(../images/hero.jpg);
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -14,7 +17,7 @@
   }
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/img-adapt/mobile/hero-m.jpg") ;
+    url('../images/img-adapt/mobile/hero-m.jpg') ;
   background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -22,37 +25,36 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/img-adapt/mobile/hero-m-2x.jpg");
+      url('../images/img-adapt/mobile/hero-m-2x.jpg');
   }
 
   @media screen and (min-width: $mobile + 1) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/img-adapt/table/hero-t.jpg");
+      url('../images/img-adapt/tablet/hero-t.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/img-adapt/table/hero-t-2x.jpg");
+        url('../images/img-adapt/tablet/hero-t-2x.jpg');
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet + 1) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/img-adapt/desctop/hero-d.jpg");
+      url('../images/img-adapt/desctop/hero-d.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/img-adapt/desctop/hero-d-2x.jpg");
+        url('../images/img-adapt/desctop/hero-d-2x.jpg');
     }
   }
 }
 .hero-title {
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-whit-color;
@@ -69,18 +71,4 @@
 }
 .overlay {
   text-align: center;
-
-    @media screen and (min-width: $mobile) {
-        max-width: $mobile;
-    }
-    
-      @media screen and (min-width: $tablet) {
-        max-width: $tablet;
-        text-align: center;
-    }
-    
-      @media screen and (min-width: $desktop) {
-        max-width: $desktop;
-        text-align: center;
-    }
 }
